@@ -1,0 +1,19 @@
+Using average_face.png we get the following results
+tp = 29
+fp = 562
+fn = 17
+
+while using average_face_cropped.png we get the following results
+tp = 28
+fp = 110
+fn = 16
+
+Although, both true positive and false negatives are similar while using two different 
+images as reference for face detection with only a number difference between both values,
+there's a wide difference in the value that we get in false positive. There were 562, false
+positives using average_face.png while only 110 using average_face_cropped.png. This means
+there were many detection in dataset that didnot correspond to actual locations of object of
+interest when using average_face.png. So average_face_cropped.png is better option.
+Also the ratio of false positive over gorund truth from is much better for second image than
+thaat of first image.
+
